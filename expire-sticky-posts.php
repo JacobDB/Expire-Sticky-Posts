@@ -98,4 +98,4 @@ function pw_esp_unstick( $post_id = 0 ) {
 	return $title;
 
 }
-add_filter( 'the_title', 'pw_esp_unstick', 100, 2 );
+add_filter( 'the_title', 'pw_esp_unstick', 100, 1 );
