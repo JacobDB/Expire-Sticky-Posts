@@ -1,18 +1,17 @@
-=== Simple Post Expiration ===
-Plugin URI: http://pippinsplugins.com/simple-post-expiration
-Author URI: http://pippinsplugins.com
-Contributors: mordauk, rzen
-Donate link: http://pippinsplugins.com/support-the-site
+=== Expire Sticky Posts ===
+Plugin URI: http://andyv.me
+Author URI: http://andyv.me
+Contributors: avondohren, mordauk, rzen, pippinsplugins
 Tags: expiration, posts, expire
 Requires at least: 3.6
 Tested up to: 4.0
 Stable Tag: 1.0
 
-A simple plugin that allows you to set an expiration date on posts. Once a post is expired, "Expired" will be prefixed to the post title.
+A simple plugin that allows you to set an expiration date on posts. Once a post is expired, "Expired" will no longer be sticky.
 
 == Description ==
 
-A simple plugin that allows you to set an expiration date on posts. Once a post is expired, "Expired" will be prefixed to the post title.
+A simple plugin that allows you to set an expiration date on posts. Once a post is expired, "Expired" will no longer be sticky.
 
 You can show the expiration status of a post using the [expires] short code.
 
@@ -30,7 +29,7 @@ The [expires] short code accepts 5 optional parameters:
 
 The `%s` will be replaced with the expiration date.
 
-Have you found a bug or have a suggestion or improvement you'd like to submit? This plugin is available on [Github](https://github.com/pippinsplugins/Simple-Post-Expiration) and pull requests are welcome!
+Have you found a bug or have a suggestion or improvement you'd like to submit? This plugin is available on [Github](https://github.com/avondohren/Expire-Sticky-Posts) and pull requests are welcome!
 
 
 == Screenshots ==
