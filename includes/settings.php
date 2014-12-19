@@ -2,7 +2,7 @@
 /**
  * Registers our plugin settings
  *
- * @copyright   Copyright (c) 2014, Pippin Williamson
+ * @copyright   Copyright (c) 2014, Andy von Dohren
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  * @since       1.0
  */
@@ -18,11 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @since 1.0
  * @return void
  */
-function pw_spe_register_settings() {
-	register_setting( 'reading', 'pw_spe_prefix', 'sanitize_text_field' );
-	add_settings_field( 'pw_spe_prefix', __( 'Expired Item Prefix', 'pw-spe' ), 'pw_spe_settings_field', 'reading', 'default' );
+function pw_esp_register_settings() {
+	register_setting( 'reading', 'pw_esp_prefix', 'sanitize_text_field' );
+	add_settings_field( 'pw_esp_prefix', __( 'Expired Item Prefix', 'pw-esp' ), 'pw_esp_settings_field', 'reading', 'default' );
 }
-add_action( 'admin_init', 'pw_spe_register_settings' );
+add_action( 'admin_init', 'pw_esp_register_settings' );
 
 /**
  * Render our settings field
@@ -31,8 +31,8 @@ add_action( 'admin_init', 'pw_spe_register_settings' );
  * @since 1.0
  * @return void
  */
-function pw_spe_settings_field() {
-	$prefix = get_option( 'pw_spe_prefix', __( 'Expired:', 'pw-spe' ) );
-	echo '<input type="text" name="pw_spe_prefix" value="' . esc_attr( $prefix ) . '" class="regular-text"/><br/>';
-	echo '<p class="description">' . __( 'Enter the text you would like prepended to expired items.', 'pw-spe' ) . '</p>';
+function pw_esp_settings_field() {
+	$prefix = get_option( 'pw_esp_prefix', __( 'Expired:', 'pw-esp' ) );
+	echo '<input type="text" name="pw_esp_prefix" value="' . esc_attr( $prefix ) . '" class="regular-text"/><br/>';
+	echo '<p class="description">' . __( 'Enter the text you would like prepended to expired items.', 'pw-esp' ) . '</p>';
 }
