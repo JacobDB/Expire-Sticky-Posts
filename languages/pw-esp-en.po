@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Simple Post Expiration\n"
+"Project-Id-Version: Expire Sticky Posts\n"
 "POT-Creation-Date: 2014-05-26 12:31-0600\n"
 "PO-Revision-Date: 2014-05-26 12:31-0600\n"
 "Last-Translator: Chris Christoff <chriscct7@gmail.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: simple-post-expiration.php:55 includes/settings.php:35
+#: expire-sticky-posts.php:55 includes/settings.php:35
 msgid "Expired:"
 msgstr ""
 
