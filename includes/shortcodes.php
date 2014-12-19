@@ -2,7 +2,7 @@
 /**
  * Registers our plugin short codes
  *
- * @copyright   Copyright (c) 2014, Pippin Williamson
+ * @copyright   Copyright (c) 2014, Andy von Dohren
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  * @since       1.0
  */
@@ -17,21 +17,21 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @since 1.0
  * @return string
  */
-function pw_spe_shortcode( $atts, $content = null ) {
+function pw_esp_shortcode( $atts, $content = null ) {
 
 	$atts = shortcode_atts( array(
 		'expires_on'  => __( 'This item expires on: %s', 'pw-spe' ),
 		'expired'     => __( 'This item expired on: %s', 'pw-spe' ),
 		'date_format' => get_option( 'date_format', 'F j, Y' ),
-		'class'       => 'pw-spe-post-expiration',
-		'id'          => 'pw-spe-post-expiration-%d',
-	), $atts, 'pw_spe' );
+		'class'       => 'pw-esp-post-expiration',
+		'id'          => 'pw-esp-post-expiration-%d',
+	), $atts, 'pw_esp' );
 
-	$date = get_post_meta( get_the_ID(), 'pw_spe_expiration', true );
+	$date = get_post_meta( get_the_ID(), 'pw_esp_expiration', true );
 
 	$expires = '<div id="' . sprintf( $atts['id'], get_the_ID() ) . '" class="' . esc_attr( $atts['class'] ) . '">';
 
-		if( pw_spe_is_expired( get_the_ID() ) ) {
+		if( pw_esp_is_expired( get_the_ID() ) ) {
 
 			$text = $atts['expired'];
 	
@@ -48,4 +48,4 @@ function pw_spe_shortcode( $atts, $content = null ) {
 	return $expires;
 
 }
-add_shortcode( 'expires', 'pw_spe_shortcode' );
+add_shortcode( 'expires', 'pw_esp_shortcode' );
