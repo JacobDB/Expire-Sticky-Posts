@@ -1,8 +1,8 @@
 === Expire Sticky Posts ===
-Plugin URI: http://andyv.me
+Plugin URI: http://andyv.me/assets/expire-sticky-posts.zip
 Author URI: http://andyv.me
 Contributors: avondohren, mordauk, rzen, pippinsplugins
-Tags: expiration, posts, expire
+Tags: expiration, posts, expire, sticky
 Requires at least: 3.6
 Tested up to: 4.0
 Stable Tag: 1.0
@@ -13,22 +13,6 @@ A simple plugin that allows you to set an expiration date on posts. Once a post 
 
 A simple plugin that allows you to set an expiration date on posts. Once a post is expired, it will no longer be sticky.
 
-You can show the expiration status of a post using the [expires] short code.
-
-The [expires] short code accepts 5 optional parameters:
-
-- expires_on - The text to be shown when a post has not yet expired. Default: `This item expires on: %s`
-
-- expired - The text to be shown when a post is expired. Default: `This item expired on: %s`
-
-- date_format - The format the expiration date should be displayed in
-
-- class - The class or classes given to the DIV element
-
-- id - The ID given to the DIV element
-
-The `%s` will be replaced with the expiration date.
-
 Have you found a bug or have a suggestion or improvement you'd like to submit? This plugin is available on [Github](https://github.com/avondohren/Expire-Sticky-Posts) and pull requests are welcome!
 
 
@@ -36,15 +20,11 @@ Have you found a bug or have a suggestion or improvement you'd like to submit? T
 
 1. Metabox added to each post / custom post type
 2. Metabox with calendar showing
-3. Expired post with modified title
-4. Expired / Expiring Posts  widget
 
 == Installation ==
 
 1. Activate the plugin
-2. Go to Settings > Reading and set the expired prefix
-3. Add an expiration date to any post item that you wish to expire at a certain point in time
-4. Optionally add the [expires] short code to the post content
+2. Add an expiration date to any post item that you wish to expire at a certain point in time
 
 == Changelog ==
 

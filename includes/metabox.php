@@ -31,7 +31,7 @@ function pw_esp_add_expiration_field() {
 	<div id="pw-esp-expiration-wrap" class="misc-pub-section">
 		<span>
 			<span class="wp-media-buttons-icon dashicons dashicons-calendar"></span>&nbsp;
-			<?php _e( 'Expires:', 'pw-esp' ); ?>
+			<?php _e( 'Sticky Expires:', 'pw-esp' ); ?>
 			<b id="pw-esp-expiration-label"><?php echo $label; ?></b>
 		</span>
 		<a href="#" id="pw-esp-edit-expiration" class="pw-esp-edit-expiration hide-if-no-js">

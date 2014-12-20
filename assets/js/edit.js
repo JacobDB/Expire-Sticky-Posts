@@ -1,28 +1,28 @@
 jQuery(document).ready(function($) {
 
-	var previous = $('#pw-spe-expiration').val();
+	var previous = $('#pw-esp-expiration').val();
 
-	$('#pw-spe-expiration').datepicker({
+	$('#pw-esp-expiration').datepicker({
 		dateFormat: 'yy-mm-dd'
 	});
 
-	$('#pw-spe-edit-expiration, .pw-spe-hide-expiration').click(function(e) {
+	$('#pw-esp-edit-expiration, .pw-esp-hide-expiration').click(function(e) {
 
 		e.preventDefault();
 
-		var date = $('#pw-spe-expiration').val();
+		var date = $('#pw-esp-expiration').val();
 
 		if( $(this).hasClass('cancel') ) {
 
-			$('#pw-spe-expiration').val( previous );
+			$('#pw-esp-expiration').val( previous );
 
 		} else if( date ) {
 
-			$('#pw-spe-expiration-label').text( $('#pw-spe-expiration').val() );
+			$('#pw-esp-expiration-label').text( $('#pw-esp-expiration').val() );
 
 		}
 
-		$('#pw-spe-expiration-field').slideToggle();
+		$('#pw-esp-expiration-field').slideToggle();
 
 	});
 });

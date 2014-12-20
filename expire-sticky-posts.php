@@ -29,11 +29,8 @@ define( 'PW_ESP_ASSETS_URL', plugin_dir_url( __FILE__ ) . 'assets' ) ;
 if( is_admin() ) {
 
 	require_once dirname( __FILE__ ) . '/includes/metabox.php';
-	require_once dirname( __FILE__ ) . '/includes/settings.php';
 
 }
-
-require_once dirname( __FILE__ ) . '/includes/shortcodes.php';
 
 /**
  * Load our plugin's text domain to allow it to be translated
@@ -86,7 +83,7 @@ function pw_esp_is_expired( $post_id = 0 ) {
  * @since 1.0
  * @return void
  */
-function pw_esp_unstick( $post_id = 0 ) {
+function pw_esp_unstick( $title = '', $post_id = 0 ) {
 
 	if( pw_esp_is_expired( $post_id ) ) {
 
@@ -94,8 +91,8 @@ function pw_esp_unstick( $post_id = 0 ) {
 		unstick_post ( $post_id );
 
 	}
-
-	return $title;
+  
+  return $title;
 
 }
-add_filter( 'the_title', 'pw_esp_unstick', 100, 1 );
+add_filter( 'the_title', 'pw_esp_unstick', 100, 2 );
